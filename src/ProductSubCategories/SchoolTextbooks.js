@@ -17,7 +17,7 @@ const SchoolTextbooks = ({ addToCart, count }) => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/schooltextbooks")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/schooltextbooks")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])

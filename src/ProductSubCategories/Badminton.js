@@ -17,7 +17,7 @@ const Badminton = ({ addToCart, count }) => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/badminton")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/badminton")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])

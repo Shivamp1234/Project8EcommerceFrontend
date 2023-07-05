@@ -17,7 +17,7 @@ const EditorsCorner = ({ addToCart, count }) => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/editorscorner")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/editorscorner")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])

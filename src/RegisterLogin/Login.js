@@ -15,7 +15,7 @@ export const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            await axios.post('http://localhost:8000/users/login', {
+            await axios.post('https://project-8-ecommerce-backend.onrender.com/users/login', {
                 email, password
             })
                 .then(res => {

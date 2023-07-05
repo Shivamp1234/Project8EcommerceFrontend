@@ -15,7 +15,7 @@ const BestSellerElectronics = () => {
     const [visible, setVisible] = useState(6)
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/headphones")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/headphones")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])

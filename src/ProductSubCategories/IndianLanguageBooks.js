@@ -17,7 +17,7 @@ const IndianLanguageBooks = ({ addToCart, count }) => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/indianlanguagebooks")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/indianlanguagebooks")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])

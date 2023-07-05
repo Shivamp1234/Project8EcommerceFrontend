@@ -18,7 +18,7 @@ const Store = ({ addToCart, count }) => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/alldata")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/alldata")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])

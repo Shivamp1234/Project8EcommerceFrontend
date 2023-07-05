@@ -702,7 +702,24 @@ nav{
     background-color: #1DA1F2;
     font-size: 1.2rem;
 }
+.error {
+    font-size: 500px;
+    font-weight: 900;
+    color: gainsboro;
+    position: absolute;
+    top: -80px;
+    left: 250px;
+    z-index: -1;
+}
 
+.page-not-found {
+    color: gray;
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    top: 230px;
+    left: 320px;
+}
 
 
 
@@ -1086,6 +1103,24 @@ hr{
     height: 6rem;
     font-size: 2rem;
     margin-bottom: 0;
+}
+.error {
+    font-size: 180px;
+    font-weight: 900;
+    color: gainsboro;
+    position: absolute;
+    top: 250px;
+    left:55px;
+    z-index: -1;
+}
+
+.page-not-found {
+    color: gray;
+    font-size: 35px;
+    font-weight: 900;
+    position: absolute;
+    top: 360px;
+    left: 80px;
 }
 }
 

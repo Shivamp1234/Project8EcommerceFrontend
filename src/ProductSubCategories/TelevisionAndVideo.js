@@ -17,7 +17,7 @@ const TelevisionAndVideo = ({ addToCart, count }) => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/televisionandvideo")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/televisionandvideo")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])

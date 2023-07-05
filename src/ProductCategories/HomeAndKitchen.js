@@ -18,7 +18,7 @@ const HomeAndKitchen = ({ addToCart, count }) => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/homeandkitchen")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/homeandkitchen")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])

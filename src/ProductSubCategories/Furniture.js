@@ -17,7 +17,7 @@ const Furniture = ({ addToCart, count }) => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/furniture")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/furniture")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])

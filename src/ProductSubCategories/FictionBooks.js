@@ -17,7 +17,7 @@ const FictionBooks = ({ addToCart, count }) => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/fictionbooks")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/fictionbooks")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])

@@ -17,7 +17,7 @@ const DietAndNutrition = ({ addToCart, count }) => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/dietandnutrition")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/dietandnutrition")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])

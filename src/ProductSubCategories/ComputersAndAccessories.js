@@ -17,7 +17,7 @@ const ComputersAndAccessories = ({ addToCart, count }) => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/computersandaccessories")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/computersandaccessories")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])

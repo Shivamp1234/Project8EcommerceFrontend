@@ -18,7 +18,7 @@ const Fashion = ({ addToCart, count }) => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/fashion")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/fashion")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])

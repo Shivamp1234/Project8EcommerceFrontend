@@ -17,7 +17,7 @@ const PersonalCareAppliances = ({ addToCart, count }) => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/products/personalcareappliances")
+        axios.get("https://project-8-ecommerce-backend.onrender.com/products/personalcareappliances")
             .then((response) => setData(response.data))
             .catch((error) => console.log("Error", error))
     }, [])
