@@ -3,6 +3,7 @@ import './Components.css'
 import Navbar from './Navbar';
 import { useNavigate } from 'react-router-dom';
 import { MdOutlineArrowBackIosNew } from 'react-icons/md'
+import { RxCross1 } from 'react-icons/rx';
 import Footer from './Footer';
 
 
@@ -52,6 +53,10 @@ const Cart = ({ cart, count }) => {
                                                 }} className='decrement'><span className='plus'>+</span></button>
                                             </div>
                                         </div>
+                                        <RxCross1 id='remove-icon' onClick={() => {
+                                            const arr = CART.filter((item) => item.id !== cartItem.id)
+                                            setCART(arr)
+                                        }} />
                                     </div>
                                     <div className='cart-hr-container'>
                                         <hr className='cart-hr' />

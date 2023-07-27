@@ -681,6 +681,12 @@ nav{
     background-color: gray;
     border: none;
 }
+#remove-icon{
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
 .total{
     display: flex;
     justify-content: flex-end;
@@ -1104,6 +1110,10 @@ hr{
     font-size: 2rem;
     margin-bottom: 0;
 }
+#remove-icon{
+    font-size: 15rem;
+}
+
 .error {
     font-size: 180px;
     font-weight: 900;

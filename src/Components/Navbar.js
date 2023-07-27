@@ -8,7 +8,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { RxCross2 } from 'react-icons/rx'
 import { useState } from 'react'
 
-const Navbar = (props) => {
+const Navbar = () => {
     const [isMobile, setIsMobile] = useState(false);
     const isLogged = localStorage.getItem('recievedToken')
     return (
@@ -19,7 +19,7 @@ const Navbar = (props) => {
                     <div id='search'>
                         <ImSearch className='profile-cart-search-icon ' /><input type='search' placeholder='SEARCH SHOPIT'></input>
                     </div>
-                    <NavLink to='/cart' id='user-cart'><BsCart3 className='profile-cart-search-icon' /><span>MY CART<sup className='cart-count'>{props.count}</sup></span></NavLink>
+                    <NavLink to='/cart' id='user-cart'><BsCart3 className='profile-cart-search-icon' /><span>MY CART</span></NavLink>
                     {isLogged ? <NavLink to='/userprofile' id='user-profile'><FiUser className='profile-cart-search-icon' /><span>MY PROFILE</span></NavLink> : <NavLink to='/login' activeClassName='active' id='user-profile'><FiUser className='profile-cart-search-icon' /><span>LOGIN</span></NavLink>}
                 </div>
             </header>
