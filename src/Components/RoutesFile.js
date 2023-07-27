@@ -53,6 +53,7 @@ const RoutesFile = () => {
   console.log(cart)
   const addToCart = (data) => {
     setCart([...cart, { ...data, quantity: 1 }])
+    alert('Item Added to cart successfully !!')
   }
   return (
     <>
